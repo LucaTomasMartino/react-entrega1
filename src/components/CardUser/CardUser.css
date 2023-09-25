@@ -1,0 +1,13 @@
+.userSection{
+    display: flex;
+    position: sticky;
+    margin-top: 10px;
+    background-color: white; 
+    z-index: 1; 
+}
+.tarjeta {
+    flex: 1;
+    margin: 0px;
+    border: 1px solid #ccc;
+    padding: 40px;
+}
