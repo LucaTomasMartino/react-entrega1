@@ -14,7 +14,7 @@
     color: yellow; 
     padding: 25px 25px;
 }
-.barra-navegacion li a:hover {
+.barra-navegacion  a:hover {
     background-color: yellow; 
     color: black;
 }

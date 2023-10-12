@@ -1,10 +1,14 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import CardUser from './components/CardUser/CardUser';
 import NavBar from './components/NavBar/NavBar';
 import ListContainer from './components/ListContainer/ListContainer';
+import InicioPage from "./pages/InicioPage";
+import NosotrosPage from "./pages/NosotrosPage";
 function App() {
   return (
+    <Router>
     <div>
       <Header />
       <NavBar />
@@ -33,6 +37,11 @@ function App() {
       </div>
       <ListContainer />
     </div>
+    <Routes>
+      <Route path='/' element={<InicioPage />}/>
+      <Route path='/nosotros' element={<NosotrosPage />}/>
+    </Routes>
+    </Router>
   );
 };
 
