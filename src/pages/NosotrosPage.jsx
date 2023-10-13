@@ -2,7 +2,7 @@
 
 const nosotros = () => {
   return (
-    <div>nosotros</div>
+    <div></div>
   )
 }
 

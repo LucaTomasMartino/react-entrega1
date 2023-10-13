@@ -4,17 +4,17 @@
     text-align: center; 
     background-color: black;
 }
-.barra-navegacion li {
+.barra-navegacion .link {
     display:flex; 
 
 }
-.barra-navegacion li a {
+.barra-navegacion .link {
     text-decoration: none;
     background-color: black; 
     color: yellow; 
     padding: 25px 25px;
 }
-.barra-navegacion  a:hover {
+.barra-navegacion  .link:hover {
     background-color: yellow; 
     color: black;
 }

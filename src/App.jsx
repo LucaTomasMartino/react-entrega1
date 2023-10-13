@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import ListContainer from './components/ListContainer/ListContainer';
 import InicioPage from "./pages/InicioPage";
 import NosotrosPage from "./pages/NosotrosPage";
+import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
     <Router>
@@ -39,7 +40,8 @@ function App() {
     </div>
     <Routes>
       <Route path='/' element={<InicioPage />}/>
-      <Route path='/nosotros' element={<NosotrosPage />}/>
+      <Route path='/nosotros' element={<NosotrosPage />}/>  
+      <Route path='*' element={<ErrorPage />}/>  
     </Routes>
     </Router>
   );

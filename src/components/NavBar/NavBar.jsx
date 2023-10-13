@@ -1,15 +1,15 @@
 import React from 'react';
 import "./NavBar.css";
 import CardWidget from '../CardWidget/CardWidget';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
-  return ( 
-<nav className='barra-navegacion'>
+  return (   <nav className='barra-navegacion'>
     <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li ><a href=""><CardWidget /></a></li>
+      <Link to="/" className='link'>Inicio</Link>
+      <Link to="/nosotros" className='link'>Nosotros</Link>
+      <Link className='link'><CardWidget /></Link>
     </ul>
-</nav>
+  </nav>
   );
 };
 export default NavBar
