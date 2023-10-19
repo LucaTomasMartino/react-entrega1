@@ -13,6 +13,11 @@ function App() {
     <div>
       <Header />
       <NavBar />
+      <Routes>
+      <Route path='/' element={<InicioPage />}/>
+      <Route path='/nosotros' element={<NosotrosPage />}/>  
+      <Route path='*' element={<ErrorPage />}/>  
+    </Routes>
       <div className='userSection '>
         <div className='tarjeta'>
         <CardUser 
@@ -38,11 +43,6 @@ function App() {
       </div>
       <ListContainer />
     </div>
-    <Routes>
-      <Route path='/' element={<InicioPage />}/>
-      <Route path='/nosotros' element={<NosotrosPage />}/>  
-      <Route path='*' element={<ErrorPage />}/>  
-    </Routes>
     </Router>
   );
 };

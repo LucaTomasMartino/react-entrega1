@@ -2,7 +2,11 @@
 
 const nosotros = () => {
   return (
-    <div></div>
+    <div>
+      <h1>
+        Nosotros
+      </h1>
+    </div>
   )
 }
 
